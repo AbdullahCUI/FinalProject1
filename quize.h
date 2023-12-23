@@ -7,3 +7,11 @@ struct Question {
     char options[4][50];
     int correctOption;
 };
+
+// Function declarations
+void displayQuestion(struct Question *question);
+int takeUserInput();
+int evaluateAnswer(int userChoice, struct Question *question);
+void displayResult(int score, int totalQuestions);
+
+#endif // QUIZ_H
