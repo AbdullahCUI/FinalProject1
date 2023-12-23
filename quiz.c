@@ -44,5 +44,13 @@ int main() {
          {"Venus", "Mars", "Jupiter", "Saturn"},
          3}
     };
+     int totalQuestions = sizeof(quiz) / sizeof(quiz[0]);
+    int score = 0;
+
+    for (int i = 0; i < totalQuestions; i++) {
+        displayQuestion(&quiz[i]);
+        int userChoice = takeUserInput();
+        score += evaluateAnswer(userChoice, &quiz[i]);
+    }
 
 
