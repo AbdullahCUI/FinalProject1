@@ -17,3 +17,8 @@ int takeUserInput() {
     scanf("%d", &choice);
     return choice;
 }
+
+// Function to evaluate the user's answer
+int evaluateAnswer(int userChoice, struct Question *question) {
+    return (userChoice == question->correctOption) ? 1 : 0;
+}
