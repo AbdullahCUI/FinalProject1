@@ -52,5 +52,9 @@ int main() {
         int userChoice = takeUserInput();
         score += evaluateAnswer(userChoice, &quiz[i]);
     }
+     displayResult(score, totalQuestions);
+
+    return 0;
+}
 
 
