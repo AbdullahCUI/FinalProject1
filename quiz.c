@@ -9,3 +9,11 @@ void displayQuestion(struct Question *question) {
         printf("%d. %s\n", i + 1, question->options[i]);
     }
 }
+
+// Function to take user input for answer
+int takeUserInput() {
+    int choice;
+    printf("Enter your choice (1-4): ");
+    scanf("%d", &choice);
+    return choice;
+}
