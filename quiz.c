@@ -39,4 +39,10 @@ int main() {
          {"C", "Java", "Python", "Assembly"},
          1},
 
+         
+        {"What is the largest planet in our solar system?",
+         {"Venus", "Mars", "Jupiter", "Saturn"},
+         3}
+    };
+
 
