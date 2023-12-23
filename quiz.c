@@ -22,3 +22,10 @@ int takeUserInput() {
 int evaluateAnswer(int userChoice, struct Question *question) {
     return (userChoice == question->correctOption) ? 1 : 0;
 }
+// Function to display the quiz result
+void displayResult(int score, int totalQuestions) {
+    printf("Quiz completed!\n");
+    printf("Your score: %d/%d\n", score, totalQuestions);
+}
+
+
