@@ -28,4 +28,15 @@ void displayResult(int score, int totalQuestions) {
     printf("Your score: %d/%d\n", score, totalQuestions);
 }
 
+int main() {
+    // Example quiz with three questions
+    struct Question quiz[3] = {
+        {"What is the capital of France?",
+         {"Berlin", "Madrid", "Paris", "Rome"},
+         3},
+
+        {"Which programming language is known as the 'mother of all languages'?",
+         {"C", "Java", "Python", "Assembly"},
+         1},
+
 
